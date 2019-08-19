@@ -6,7 +6,7 @@ const requireAuth = require("../middlewares/requireAuth");
 
 const router = express.Router();
 
-router.post("/signup", requireAuth, async (req, res) => {
+router.post("/signup", async (req, res) => {
   const { email, password } = req.body;
 
   try {
